@@ -31,7 +31,7 @@ module motor() {
 difference() {
     cube([40, 60, 5]);
     union() {
-        translate([20, 36.5, -15])
+        translate([20, 35, -15])
             motor();
         translate([10, 10, -1]) {
             cylinder(h=15, d=4.3);
