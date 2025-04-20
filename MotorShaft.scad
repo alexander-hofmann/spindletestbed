@@ -3,17 +3,17 @@ difference() {
     union() {
         cylinder(h=5, d=25);
         translate([0,0,5])
-            cylinder(h=10, d=6);
+            cylinder(h=10, d=6.1);
     }
     union() {
         translate([0,0,-0.5])
-            cylinder(h=4, d=15);
+            cylinder(h=4, d=15.1);
         for(i=[0 : 360/6 : 359]) {
             rotate([0, 0, i]) {
                 translate([10, 0, -0.5])
-                    cylinder(h=6, d=2.2);
+                    cylinder(h=6, d=2.3);
                 translate([10, 0, 1.5])
-                    cylinder(h=5, d=4.1);
+                    cylinder(h=5, d=4.2);
             }
         }
     }
